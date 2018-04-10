@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="tv_tagline">Learn. Think. Do.</string>
+    <string name="tv_tagline2">Learn Tomorrow\'s Skills, Today</string>
+    <string name="btn_udacity">Udacity </string>
+    <string name="btn_address">2465 Latham St\nMountain View, CA 94043</string>
+    <string name="btn_phone">650–555–5555</string>
+    <string name="text_email">india@udacity.com</string>
+    <string name="tv_weblink">www.udacity.com</string>
+</resources>

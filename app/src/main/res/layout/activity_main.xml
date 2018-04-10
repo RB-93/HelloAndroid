@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_udacity_big"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity_wall" />
+
+    <ImageView
+        android:id="@+id/img_udacity_wallmono"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity_icon" />
+
+    <TextView
+        android:id="@+id/tv_tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="72dp"
+        android:textColor="#1976D2"
+        android:text="@string/tv_tagline" />
+
+    <TextView
+        android:id="@+id/tv_tagline2"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_udacity_big"
+        android:layout_marginTop="15dp"
+        android:paddingEnd="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FFFFFF"
+        android:text="@string/tv_tagline2" />
+
+    <ImageView
+        android:id="@+id/img_udacitymono2"
+        android:src="@drawable/udacity_mono1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img_udacity_big"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/button_udacity"
+        android:background="@drawable/button_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tagline2"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:onClick="toWiki"
+        android:text="@string/btn_udacity" />
+
+    <Button
+        android:id="@+id/button_address"
+        android:background="@drawable/button_round_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_udacity"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:textColorLink="#000000"
+        android:autoLink="map"
+        android:text="@string/btn_address" />
+
+    <Button
+        android:id="@+id/button_phone"
+        android:background="@drawable/button_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_address"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:textColorLink="#000000"
+        android:autoLink="phone"
+        android:text="@string/btn_phone" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/button_phone"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/separator" />
+
+    <TextView
+        android:id="@+id/tv_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:onClick="toWeb"
+        android:text="@string/tv_weblink" />
+
+    <ImageView
+        android:id="@+id/img_weblink"
+        android:src="@drawable/img_web"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@id/tv_link"
+        android:padding="2dp"
+        android:onClick="toWeb" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_link"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColorLink="#000000"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15sp"
+        android:autoLink="email"
+        android:text="@string/text_email" />
+
+    <ImageView
+        android:id="@+id/img_email"
+        android:src="@drawable/ic_email_black"
+        android:layout_width="23dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/img_weblink"
+        android:layout_marginEnd="3dp"
+        android:layout_toStartOf="@id/tv_email"
+        android:padding="2dp"
+        android:onClick="toGmail" />
+
+</RelativeLayout>
